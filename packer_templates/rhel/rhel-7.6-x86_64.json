@@ -135,7 +135,10 @@
         "HOME_DIR=/home/vagrant",
         "http_proxy={{user `http_proxy`}}",
         "https_proxy={{user `https_proxy`}}",
-        "no_proxy={{user `no_proxy`}}"
+        "no_proxy={{user `no_proxy`}}",
+        "RH_USERNAME={{user `rh_username`}}",
+        "RH_PASSWORD={{user `rh_password`}}",
+        "RH_POOL_ID={{user `rh_pool_id`}}"
       ],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E sh -eux '{{.Path}}'",
       "expect_disconnect": true,
@@ -164,6 +167,9 @@
     "headless": "",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
+    "rh_username": "{{env `rh_username`}}",
+    "rh_password": "{{env `rh_password`}}",
+    "rh_pool_id": "{{env `rh_pool_id`}}",
     "iso_checksum": "60a0be5aeed1f08f2bb7599a578c89ec134b4016cd62a8604b29f15d543a469c",
     "iso_checksum_type": "sha256",
     "iso_name": "rhel-server-7.6-x86_64-dvd.iso",
