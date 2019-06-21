@@ -146,7 +146,9 @@
         "../_common/virtualbox.sh",
         "../_common/vmware.sh",
         "../_common/parallels.sh",
+        "scripts/register.sh",
         "../centos/scripts/cleanup.sh",
+        "scripts/unregister.sh",
         "../_common/minimize.sh"
       ],
       "type": "shell"
