@@ -1,9 +1,8 @@
 #!/bin/sh -eux
 
 ## Red Hat Subscription-Manager (RHSM)
-## Script by Stephen Leahy and Ben Colby-Sexton
+## Script by Stephen Leahy
 ## sleahy@redhat.com
-## bcs@redhat.com
 ## 21/06/2019
 ##
 ## Register to RHSM for testing of specific repositories
