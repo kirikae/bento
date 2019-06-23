@@ -1,9 +1,8 @@
 #!/bin/sh -eux
 
 ## Red Hat Subscription-Manager (RHSM)
-## Script by Stephen Leahy and Ben Colby-Sexton
+## Script by Stephen Leahy
 ## sleahy@redhat.com
-## bcs@redhat.com
 ## 21/06/2019
 ##
 ## Register to RHSM for testing of specific repositories
@@ -13,7 +12,7 @@ IFS=","
 /usr/sbin/subscription-manager register --username=$RH_USERNAME --password=$RH_PASSWORD
 
 if [[ $? = 0 ]]; then
-  for POOL in $POOL_IDS; do
+  for POOL in $RH_POOL_ID; do
     /usr/sbin/subscription-manager attach --pool=$POOL
   done
 else
