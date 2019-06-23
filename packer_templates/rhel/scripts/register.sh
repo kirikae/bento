@@ -12,7 +12,7 @@ IFS=","
 /usr/sbin/subscription-manager register --username=$RH_USERNAME --password=$RH_PASSWORD
 
 if [[ $? = 0 ]]; then
-  for POOL in $POOL_IDS; do
+  for POOL in $RH_POOL_ID; do
     /usr/sbin/subscription-manager attach --pool=$POOL
   done
 else
