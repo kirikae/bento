@@ -9,4 +9,4 @@
 
 
 /usr/sbin/subscription-manager remove --all
-/usr/sbin/subscription-manager unregister --username=$RH_USERNAME
+/usr/sbin/subscription-manager unregister 
