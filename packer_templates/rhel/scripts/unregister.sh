@@ -7,4 +7,6 @@
 ##
 ## Unsubscribe from RHSM
 
+
+/usr/sbin/subscription-manager remove --all
 /usr/sbin/subscription-manager unregister --username=$RH_USERNAME
